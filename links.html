@@ -1,0 +1,66 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>一期页面导航 · 茶已己</title><style>
+body{background:#F4F7F5}
+.wrap{max-width:860px;margin:0 auto;padding:34px 20px 64px;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;color:#1F2329}
+.wrap h1{font-size:21px;font-weight:650;margin-bottom:6px;letter-spacing:.5px}
+.wrap p.lead{font-size:13px;color:#6E727A;line-height:1.8;margin-bottom:18px}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}
+.badges span{font-size:10.5px;color:#2F7D57;background:#E8F4EC;border-radius:12px;padding:5px 11px}
+.badges span.gray{color:#7C808A;background:#EDF0F2}
+h2.sec{font-size:13px;font-weight:650;margin:26px 0 12px;padding-left:9px;border-left:3px solid #2F7D57}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(188px,1fr));gap:10px}
+.lk{background:#fff;border:1px solid #E3E8E5;border-radius:11px;padding:13px 14px;display:block;transition:.15s}
+.lk:hover{border-color:#2F7D57;transform:translateY(-2px);box-shadow:0 6px 18px rgba(47,125,87,.09)}
+.lk b{font-size:13px;display:block;margin-bottom:5px}
+.lk b i{font-style:normal;color:#9AA3A0;font-size:10px;margin-right:6px}
+.lk span{font-size:10.5px;color:#8A8F98;line-height:1.65;display:block;min-height:34px}
+.lk code{font-size:10px;color:#2F7D57;display:block;margin-top:8px}
+.flow{background:#fff;border:1px solid #E3E8E5;border-radius:11px;padding:16px 18px}
+.flow div{font-size:12px;color:#4B5158;line-height:2.1}
+.flow em{font-style:normal;color:#2F7D57;font-weight:650}
+.steps{background:#fff;border:1px solid #E3E8E5;border-radius:11px;padding:8px 18px 16px}
+.steps li{font-size:12px;color:#4B5158;line-height:2;padding-left:4px}
+.steps b{color:#2F7D57}
+.tools{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.tools a,.tools button{font-size:12px;border:1px solid #DCE5DF;background:#fff;color:#2F7D57;border-radius:8px;padding:10px 16px;font-family:inherit;cursor:pointer}
+.tools a:hover,.tools button:hover{background:#E8F4EC}
+.tools .primary{background:#2F7D57;color:#fff;border-color:#2F7D57}
+.tools .primary:hover{background:#256747}
+.foot-note{font-size:11px;color:#9AA3A0;line-height:1.9;margin-top:26px;border-top:1px solid #E3E8E5;padding-top:16px}
+</style></head><body data-page="links"><div class="wrap"><h1>茶已己 · 一期页面 Demo</h1>
+<p class="lead">完整的前端页面演示：17 个页面、全链路跳转、金额与订单状态实时联动。已去掉手机原型外壳，按 375×812 设计稿的绿色主题、字体与圆角规范还原。本版为纯前端演示，数据保存在浏览器 localStorage，后台服务留到二期接入。</p>
+<div class="badges"><span>17 个页面</span><span>全链路闭环</span><span>金额 / 库存状态联动</span><span class="gray">单文件 HTML · 可离线打开</span><span class="gray">后台二期</span></div>
+<h2 class="sec">核心链路</h2><div class="grid"><a class="lk" href="index.html"><b><i>01</i>首页</b><span>绿色 banner / 用户卡 / 自取与订单入口 / 当前门店</span><code>index.html</code></a><a class="lk" href="store.html"><b><i>02</i>选择门店</b><span>地图 / 搜索与筛选 / 门店切换 / 收藏 / 营业状态</span><code>store.html</code></a><a class="lk" href="store-detail.html"><b><i>03</i>门店详情</b><span>门店信息 / 位置示意 / 设为取餐门店</span><code>store-detail.html</code></a><a class="lk" href="order.html"><b><i>04</i>点单</b><span>6 个分类 / 15 款商品 / 搜索 / 加购 / 购物车合计</span><code>order.html</code></a><a class="lk" href="spec.html"><b><i>05</i>选规格</b><span>杯型 / 糖度 / 温度 / 加料 / 数量 / 价格联动</span><code>spec.html</code></a><a class="lk" href="search.html"><b><i>06</i>搜索</b><span>历史搜索 / 热门词 / 分类入口 / 结果列表</span><code>search.html</code></a><a class="lk" href="cart.html"><b><i>07</i>购物车</b><span>条目增删改 / 数量联动金额 / 空态 / 去结算</span><code>cart.html</code></a><a class="lk" href="checkout.html"><b><i>08</i>确认订单</b><span>取餐门店与时间 / 备注 / 优惠券 / 金额明细</span><code>checkout.html</code></a></div><h2 class="sec">支付与订单</h2><div class="grid"><a class="lk" href="pay.html"><b><i>09</i>收银台</b><span>支付倒计时 / 三种支付方式 / 确认支付 / 取消</span><code>pay.html</code></a><a class="lk" href="success.html"><b><i>10</i>支付结果</b><span>取餐号 / 制作进度 / 商品与金额明细 / 订单信息</span><code>success.html</code></a><a class="lk" href="orders.html"><b><i>11</i>我的订单</b><span>全部 / 待支付 / 制作中 / 已完成 / 再来一单</span><code>orders.html</code></a><a class="lk" href="order-detail.html"><b><i>12</i>订单详情</b><span>按状态渲染取餐号与进度 / 订单全量信息</span><code>order-detail.html</code></a><a class="lk" href="coupons.html"><b><i>13</i>我的优惠券</b><span>可使用 / 已使用 / 已过期 / 结算选券</span><code>coupons.html</code></a></div><h2 class="sec">账户与设置</h2><div class="grid"><a class="lk" href="mine.html"><b><i>14</i>我的</b><span>会员信息 / 积分 / 优惠券 / 订单 / 门店 / 设置</span><code>mine.html</code></a><a class="lk" href="member.html"><b><i>15</i>会员中心</b><span>等级 / 成长值 / 四项权益 / 积分明细</span><code>member.html</code></a><a class="lk" href="settings.html"><b><i>16</i>设置</b><span>通知开关 / 清缓存 / 重置演示数据 / 退出登录</span><code>settings.html</code></a><a class="lk" href="login.html"><b><i>17</i>登录</b><span>手机号 / 验证码 / 协议勾选 / 微信一键登录</span><code>login.html</code></a></div>
+<h2 class="sec">完整跳转链路</h2>
+<div class="flow"><div>
+<em>首页</em> → 到店自取 → <em>选择门店</em> → 门店详情 / 去点单 → <em>点单</em><br>
+<em>点单</em> → 搜索 / 点商品图 → <em>选规格</em> → 加入购物车 → <em>购物车</em><br>
+<em>点单 / 购物车</em> → 去结算 → <em>确认订单</em> → 选优惠券 → 提交订单 → <em>收银台</em><br>
+<em>收银台</em> → 确认支付 → <em>支付结果</em> → <em>订单详情</em> → 再来一单 → <em>购物车</em><br>
+底部导航：首页 / 点单 / 订单 / 我的 全程互通；<em>我的</em> → 优惠券 / 会员中心 / 设置 / 登录</div></div>
+
+<h2 class="sec">建议演示脚本</h2>
+<ol class="steps">
+<li><b>1.</b> 从「首页」点「到店自取」，在「选择门店」切换门店并收藏，观察「点单」页门店名与距离同步变化。</li>
+<li><b>2.</b> 在「点单」切换左侧 6 个分类、搜索商品，点加号直接加购，观察底部购物车角标与金额实时变化。</li>
+<li><b>3.</b> 点商品图进「选规格」，切换杯型/加料与数量，价格实时更新；点「直接结算」。</li>
+<li><b>4.</b> 「购物车」增减数量或删除，金额与优惠同步；点「去结算」进「确认订单」。</li>
+<li><b>5.</b> 「确认订单」切换取餐时间、填备注、点优惠券进「我的优惠券」选券（或选「不使用优惠券」），返回后金额自动重算。</li>
+<li><b>6.</b> 提交订单进「收银台」，切换支付方式并确认支付，得到新的取餐号与制作进度。</li>
+<li><b>7.</b> 在「我的订单」按 4 种状态筛选，进「订单详情」点「再来一单」，商品回到购物车，链路闭合。</li>
+<li><b>8.</b> 「我的」→「设置」→「重置演示数据」，一键恢复初始购物车与 3 条示例订单。</li>
+</ol>
+
+<div class="tools"><a class="primary" href="index.html">从首页开始完整走一遍</a>
+<a href="preview.html">并排查看全部页面</a>
+<button id="resetAll">重置演示数据</button>
+<button id="seedEmpty">清空购物车体验空态</button></div>
+<div class="foot-note">说明：① 首页 banner 与选规格页大图取自 Figma 设计稿裁图，其余布局、文案、图标与交互均为代码重建；② 价格、优惠、订单号、取餐号、下单时间均由前端数据层计算，示例订单为预置数据；③ 帮助与反馈、积分商城、消息推送等需要后台的能力，一期以明确提示占位，二期接入；④ 所有页面为自包含 HTML，双击即可离线打开，跨页面状态依赖同一浏览器下的 localStorage；⑤ 想恢复初始购物车与示例订单，点上方「重置演示数据」，或直接打开 <code>links.html?reset=1</code>。</div>
+</div>
+<script>
+if(location.search.indexOf('reset=1')>-1)localStorage.removeItem('cyji_demo_v2');
+document.getElementById('resetAll').onclick=function(){localStorage.removeItem('cyji_demo_v2');location.reload()};
+document.getElementById('seedEmpty').onclick=function(){
+  try{var d=JSON.parse(localStorage.getItem('cyji_demo_v2'));if(d){d.cart=[];localStorage.setItem('cyji_demo_v2',JSON.stringify(d))}}catch(e){}
+  location.href='cart.html';
+};
+</script></body></html>
